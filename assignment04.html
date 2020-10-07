@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head><title>COM5961 Assignments by Lerong SHAO (1155145668)</title>
+<style>
+  .container {
+        margin:10%;
+        border-width:0 pixel;
+        border-color:silver;
+        border-radius: 25px;
+  }
+</style>
+</head>
+<body>
+  <div class='container'>
+    <center><h2 style="font-family:Helvetica, Arial;" >Week 05 - Assignment 04</h2></center>
+    <br>
+   <center><form id='calculation'>
+        <div>
+           <label>
+             Enter two numbers and multiply them!
+           </label>
+           <br>
+           <br>
+           <input type='number' name='x'> * <input type='number' name='y'>
+           <button id='submitBtn' type='submit'>=</button>
+         </div>
+   </form></center>
+
+<script>
+function calculate() {
+var x = document.forms[0].x.value;
+var y = document.forms[0].y.value;
+var z = x * y;
+alert("The result of your calculation is " + z + " !")}
+document.getElementById('submitBtn').addEventListener('click', calculate);
+</script>
+<br>
+<br>
+     <center><form id='food'>
+         <div>
+            <label>
+             <h4>What's for dinner tonight? Hard to make a decision?</h4>
+             Then enter a number from 1 to 3, I'll decide for you!
+            </label>
+            <br>
+            <br>
+            <input type='text' name='foodnumber'> 
+            <button id='foodsubmitBtn' type='submit'>Go</button>
+         </div>
+     </form></center>    
+<script>
+function choosefood() {
+ var food = document.forms[1].foodnumber.value;
+ if (food == "1"){alert("WOW! Today's dinner is SALAD!")}
+ else if (food == "2"){alert("WOW! Today's dinner is PASTA!")}
+ else if (food == "3"){alert("WOW! Today's dinner is HAMBURGER!")}
+ else{alert("Enter a number from 1 to 3 please!")}
+ }
+document.getElementById('foodsubmitBtn').addEventListener('click', choosefood);
+</script>
+  </div>
+</body>
+</html>
