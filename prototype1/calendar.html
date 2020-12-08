@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='fullcalendar.css' rel='stylesheet' />
+<link href='fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='moment.min.js'></script>
+<script src='jquery.min.js'></script>
+<script src='fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			defaultDate: '2020-11-26',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: '卖火柴的小女孩',
+					start: '2020-11-26',
+					end: '2020-11-27'
+				},
+				{
+					title: '疯狂的疯狂',
+					start: '2020-11-27',
+					end: '2020-11-28'
+				},
+				{
+					title: '局',
+					start: '2020-11-27',
+					end: '2020-11-29'
+				},
+				{
+					title: '宝船',
+					start: '2020-11-28',
+					end: '2020-11-29'
+				},
+				{
+					title: '伤口消失在茫茫黑夜中',
+					start: '2020-11-28'
+				},
+				{
+					title: '你若安好，那还得了',
+					start: '2020-11-29'
+				},
+				{
+					title: '毛瑟',
+					start: '2020-11-30'
+				},
+				{
+					title: '恋爱吧！人类',
+					start: '2020-12-01',
+				},
+                {
+					title: '绝对飞行机',
+					start: '2020-12-01',
+					end: '2020-12-02'
+				},
+                {
+					title: '十三月',
+					start: '2020-12-02',
+				},                
+                {
+					title: '麻花戏剧夜现场',
+					start: '2020-12-02',
+					end: '2020-12-03'
+				},               
+                {
+					title: '横财满屋',
+					start: '2020-12-03',
+					end: '2020-12-06'
+				},                
+                {
+					title: '哈姆雷特',
+					start: '2020-12-04',
+					end: '2020-12-05'
+				},                
+                {
+					title: '周六下午两点半的咖啡馆',
+					start: '2020-12-04',
+					end: '2020-12-05'
+				},                
+                {
+					title: '维纳斯日记',
+					start: '2020-12-04',
+					end: '2020-12-05'
+				},                
+                {
+					title: '偷心晚宴',
+					start: '2020-12-04',
+					end: '2020-12-06'
+				},                
+                {
+					title: '被嫌弃的松子的一生',
+					start: '2020-12-05',
+					end: '2020-12-06'
+				},                
+                {
+					title: '魔女宅急便',
+					start: '2020-12-05',
+					end: '2020-12-06'
+				},                
+                {
+					title: '三体Ⅱ黑暗森林',
+					start: '2020-12-09',
+					end: '2020-12-11'
+				},                
+                {
+					title: '婿事待发',
+					start: '2020-12-12',
+					end: '2020-12-13'
+				},                
+                {
+					title: '白鹿原',
+					start: '2020-12-16',
+					end: '2020-12-17'
+				},                
+                {
+					title: '我只是比较容易放弃',
+					start: '2020-12-18',
+				},                
+                {
+					title: '第一次约会',
+					start: '2020-12-18',
+					end: '2020-12-20'
+				},                
+                {
+					title: '雷雨',
+					start: '2020-12-19',
+				},                
+                {
+					title: '醉后赢家',
+					start: '2020-12-22',
+					end: '2020-12-27'
+				},                
+                {
+					title: '时光旅行局意外事件',
+					start: '2020-12-29',
+					end: '2020-12-31'
+				},                
+                {
+					title: '二八八的别结婚',
+					start: '2020-12-26',
+				},                
+                {
+					title: '四世同堂',
+					start: '2020-12-30',
+					end: '2020-12-31'
+				},                
+                {
+					title: '永不消逝的电波',
+					start: '2021-01-09',
+					end: '2020-01-10'
+				},               
+				{
+					title: 'Click for Google',
+					url: '新建文本文档.html',
+					start: '2020-12-28'
+				}
+			]
+		});
+		
+	});
+
+</script>
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
+</head>
+<body>
+
+	<div id='calendar'></div>
+
+</body>
+</html>
